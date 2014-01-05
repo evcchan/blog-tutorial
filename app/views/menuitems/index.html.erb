@@ -1,0 +1,24 @@
+<h1>Listing Menu Items</h1>
+
+<div class = "wrap">
+<table>
+
+  <tr>
+    <th style = "width:33%">Title</th>
+    <th style= "width:33%">Description</th>
+    <th style= "width:33%" align="center">Price</th>
+  </tr>
+ 
+  <% @menuitems.each do |menuitem| %>
+    <tr>
+      <td><%= menuitem.title %></td>
+      <td><%= menuitem.description %></td>
+      <td align="center"><%= menuitem.price %></td>
+    </tr>
+  <% end %>
+</table>
+
+</div>
+
+<p></p>
+<%= link_to "Add Menu Items", new_menuitem_path %>

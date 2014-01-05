@@ -1,0 +1,21 @@
+<h1> Menu Item </h1>
+
+<p>
+  <strong>Dish Name:</strong>
+  <br>
+  <%= @menuitem.title %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <br>
+  <%= @menuitem.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <br>
+  <%=@menuitem.price %>
+</p>
+
+<%=link_to "Back to List", menuitems_path %>

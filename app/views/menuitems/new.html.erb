@@ -1,0 +1,26 @@
+<h1>New Menu Item</h1>
+
+<%=form_for :menuitem, url: menuitems_path do |f| %>
+  <p>
+    <%= f.label :"Dish Name" %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :"Dish Description" %><br>
+    <%= f.text_area :description %>
+  </p>
+ 
+  <p>
+    <%= f.label :"Dish Price" %><br>
+    <%= f.text_area :price %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+
+
+<% end %>
+
+  <%= link_to "Back to List", menuitems_path %>
